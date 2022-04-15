@@ -35,9 +35,13 @@ h1, p {
 }
 
 button {
-	width: 15%;
+	width: 200px;
 	margin-top: 10px;
 	margin-bottom: 20px;
+}
+
+.generate-button {
+	width: 100px;
 }
 
 .card-display {
@@ -51,6 +55,7 @@ button {
 	margin: 3%;
 	width: 250px;
 	height: auto;
+	border-radius: 10px;
 }
 
 /* first gradient */
@@ -70,7 +75,7 @@ button {
 }
 
 /* button */
-.button {
+button {
   background-color: #160045;
   border-color: white;
   border-width: 2px;
@@ -86,12 +91,12 @@ button {
   padding: 10px;
 }
 
-.button:hover {
+button:hover {
   background-color: #3e2080;
   font-weight: bolder;
 }
 
-.button:active {
+button:active {
   background-color: #160045;
   transform: translateY(3px);
 }
