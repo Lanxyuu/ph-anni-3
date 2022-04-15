@@ -1,0 +1,125 @@
+/*
+  CSS Styles for Gallery in 2nd Anniversary Website | gallery.css
+*/
+
+
+/* reset styles */
+body, h1, h2, h4, header, div, footer {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+/* body */
+body {
+	background: #000000;
+}
+
+/* header */
+header {
+	margin: 40px 10px;
+}
+
+header > p {
+  color: white;
+  text-align: center;
+  font-size: 125%;
+}
+
+h1, p {
+	color: #ffffff;
+}
+
+.button-div {
+	background: #aa94b0;
+}
+
+button {
+	width: 15%;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.card-display {
+	background: #aa94b0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.card-display > img {
+	margin: 3%;
+	width: 250px;
+	height: auto;
+}
+
+/* first gradient */
+.first-divider {
+	height: 100px;
+	background: linear-gradient(#000000 0%, #aa94b0 100%);
+  	padding: 10px 5px;
+	
+	font-size: 150%;
+}
+
+/* last gradient */
+.last-divider {
+	height: 100px;
+	background: linear-gradient(#aa94b0 0%, #000000 100%);
+  	color: white;
+}
+
+/* button */
+.button {
+  background-color: #160045;
+  border-color: white;
+  border-width: 2px;
+
+  color: white;
+  text-align: center;
+  border-radius: 15px;
+
+  font-family: 'Hind';
+  font-size: 24px;
+  font-weight: bold;
+
+  padding: 10px;
+}
+
+.button:hover {
+  background-color: #3e2080;
+  font-weight: bolder;
+}
+
+.button:active {
+  background-color: #160045;
+  transform: translateY(3px);
+}
+
+/* footer */
+footer {
+	color: #ffffff;
+	margin: 40px 10px;
+}
+
+/* if device is mobile */
+@media (max-width: 1100px) {
+	/* first gradient */
+	.first-divider {
+		height: 50px;
+		background: linear-gradient(#000000 0%, #aa94b0 100%);
+    	padding: 10px 5px;
+	}
+	/* last gradient */
+	.last-divider {
+		height: 50px;
+		background: linear-gradient(#aa94b0 0%, #000000 100%);
+		  color: white;
+	}
+	/*
+	.card-display > img {
+		margin: 10px;
+		width: 80vw;
+		height: auto;
+	}*/
+}

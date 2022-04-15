@@ -1,0 +1,172 @@
+/*
+  CSS Styles for Anniversary Website | styles.css
+*/
+
+
+/* reset styles */
+body, h1, h5, header, div, footer {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+  color: white;
+  font-family: 'Baskerville';
+  font-size: 200%;
+}
+
+/* body */
+body {
+	background: #000000;
+  position: absolute;
+}
+
+.intro {
+	font-family: 'Baskerville';
+  padding: 10px 5px;
+	font-size: 150%;
+	color: white;
+	max-width: 800px;
+}
+
+.first-divider {
+	height: auto;
+	background: linear-gradient(#000000 0%, #aa94b0 100%);
+  padding: 10px 5px;
+}
+
+/* columns and boxes */
+.content-flexbox {
+	background: #aa94b0;
+	padding: 1px 0px 5px;
+
+	flex-direction: row;
+  flex-wrap: wrap;
+
+	display: flex;
+  
+	-webkit-flex-flow: row wrap;
+	justify-content: center;
+}
+
+.card-container {
+  width: 45%;
+}
+
+.card-container > img {
+  margin: 2.5vw;
+  width: 35%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.message-container {
+  width: 50%;
+  background-image: url('images/paper-bg.jpg');
+
+  border-radius: 5px;
+}
+
+.message {
+	margin: 5vw;
+  font-size: 20px;
+}
+
+
+@media (max-width: 1100px) {
+	.card-container {
+		justify-content: center;
+		margin: 0px 5px;
+		max-width: 100%;
+		height: auto;
+	}
+
+  .card-container > img {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+	.card-container {
+		justify-content: center;
+		margin: 0px 5px;
+		max-width: 100%;
+		height: auto;
+	}
+
+  .card-container > img {
+    width: 80%;
+  }
+}
+
+.comment-description:hover {
+  background-color:rgb(223, 218, 245, 1);
+  transition: 0.8s;
+}
+
+/*footer*/
+.last-divider {
+	height: auto;
+	padding: 10px 0px;
+  background: linear-gradient(#aa94b0 0%, #000000 100%);	
+  font-family: 'Baskerville';
+  color: white;
+  font-size: 180%;
+}
+
+footer {
+  font-family: 'Niramit';
+  margin: 20px 5px;
+  font-size: 85%;
+  color: white;
+}
+
+a {
+	color: #4f1fff;
+}
+
+.title {
+  font-family: 'Playball';
+  color: #160045;
+  font-size: 250%;
+  padding: 10px;
+  background-color: #aa94b0;
+  padding: 25px 25px 50px;
+}
+
+/*button*/
+
+.button-div {
+  background-color: #aa94b0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.button {
+  background-color: #160045;
+  border-color: white;
+  border-width: 2px;
+
+  color: white;
+  text-align: center;
+  border-radius: 15px;
+
+  font-family: 'Hind';
+  font-size: 24px;
+  font-weight: bold;
+
+  padding: 10px;
+}
+
+.button:hover {
+  background-color: #3e2080;
+  font-weight: bolder;
+}
+
+.button:active {
+  background-color: #160045;
+  transform: translateY(3px);
+}
