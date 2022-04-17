@@ -34,12 +34,21 @@
 			<p>Brought to you by Hecate.</p>
 		</div>
 		<div class="button-div">
-			<button class="generate-button" onclick="" type="button">YEET</button>
+			<button id="btn" onClick="generateCards()"class="button" onclick="" type="button">YEET</button>
 		</div>
 		<div class="card-display">
-			<img src="cards/cardsample.png">
-			<img src="cards/cardsample.png">
-			<img src="cards/cardsample.png">
+			<div class="card">
+				<img id="card1" src="cards/cardsample.png"><br/>
+				<div id="meaning1">Meaning of first card...</div>
+			</div>
+			<div class="card">
+				<img id="card2" src="cards/cardsample.png"><br/>
+				<div id="meaning2">Meaning of second card...</div>
+			</div>
+			<div class="card">
+				<img id="card3" src="cards/cardsample.png"><br/>
+				<div id="meaning3">Meaning of third card...</div>
+			</div>
 		</div>
 	  <div class="last-divider">
 			<button class="button" onclick=" window.open('./index.html','_blank')" type="button">RETURN HOME</button>
@@ -53,4 +62,6 @@
 	</footer>
   </center>
 </body>
+<script src="script.js"></script>
+</script>
 </html>
