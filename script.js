@@ -4,7 +4,6 @@ const card3 = document.getElementById("card3");
 const meaning1 = document.getElementById("meaning1");
 const meaning2 = document.getElementById("meaning2");
 const meaning3 = document.getElementById("meaning3");
-const btn = document.getElementById("btn");
 
 function chooseCard(cardId, meaningId) {
   const random = Math.floor(Math.random() * cardImg.length);
