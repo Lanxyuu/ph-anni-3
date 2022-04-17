@@ -53,6 +53,7 @@ button {
 .card  > img {
 	width: 100%;
 	height: auto;
+	border-radius: 10px;
 }
 
 .reversed {
@@ -71,7 +72,6 @@ button {
 	justify-content: space-evenly;
 	
 	height: auto;
-	border-radius: 10px;
 }
 
 /* first gradient */

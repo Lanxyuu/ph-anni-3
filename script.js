@@ -13,8 +13,6 @@ const reversed = ["<b>reversed death</b>: blah", "<b>reversed judgement</b>: bla
 function chooseCard(cardId, meaningId) {
   const random = Math.floor(Math.random() * cardImg.length);
   const isUpright = (0 == Math.round(Math.random())) ? true : false ;
-  console.log(random);
-  console.log(upright);
   cardId.src=cardImg[random];
   if (isUpright) {
     cardId.classList.remove("reversed");
