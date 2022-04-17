@@ -1,42 +1,32 @@
-const card = document.getElementById("card");
+const card1 = document.getElementById("card1");
+const card2 = document.getElementById("card2");
+const card3 = document.getElementById("card3");
+const meaning1 = document.getElementById("meaning1");
+const meaning2 = document.getElementById("meaning2");
+const meaning3 = document.getElementById("meaning3");
 const btn = document.getElementById("btn");
 
-let generateCard = (data) => {
-  document.getElementById("card").src="images/butler.png";
-  const values = [
-    "The World",
-    "Judgement",
-    "The Sun",
-    "The Moon"
-  ];
-  const suits = ["Major Arcana", "Suit of Wands", "Suit of Cups", "Suit of Swords", "Suit of Pentacles"];
-  // card.attr("src", "images/butler.png")
-  const cards = [];
-  for (let s = 0; s < suits.length; s++) {
-    for (let v = 0; v < values.length; v++) {
-      const value = values[v];
-      const suit = suits[s];
-      cards.push({ value, suit });
-    }
+const cardImg = ["./cards/arcana/death.png", "./cards/arcana/judgement.png", "./cards/arcana/justice.png"];
+const upright = ["<b>upright death</b>: blah", "<b>upright judgement</b>: blah", "<b>upright justice</b>: blah"];
+const reversed = ["<b>reversed death</b>: blah", "<b>reversed judgement</b>: blah", "<b>reversed justice</b>: blah"];
+
+function chooseCard(cardId, meaningId) {
+  const random = Math.floor(Math.random() * cardImg.length);
+  const isUpright = (0 == Math.round(Math.random())) ? true : false ;
+  console.log(random);
+  console.log(upright);
+  cardId.src=cardImg[random];
+  if (isUpright) {
+    cardId.classList.remove("reversed");
+    meaningId.innerHTML=upright[random];
+  } else {
+    cardId.classList.add("reversed");
+    meaningId.innerHTML=reversed[random];
   }
-  return cards;
 }
 
-function randomCard(cards) {
-  const random = Math.floor(Math.random() * 78) + 1;
-  const cardValue = cards[random].value;
-  const cardSuit = cards[random].suit;
-  let entity;
-  if(cardSuit == "The World") {
-    card.attr("src", "images/butler.png")
-  }
-  // const card = document.createElement("div");
-  card.classList.add("card", cardSuit.toLowerCase());
-  card.innerHTML = '<span class="card-value-suit top">' + 
-  cardValue + entity + "</span>" + '<span class="card-suit">' + entity + 
-  "</span>" + '<span class="card-value-suit bot">' + cardValue + entity + "</span>";
-  // document.body.appendChild(card);
+let generateCards = () => {
+  chooseCard(card1, meaning1);
+  chooseCard(card2, meaning2);
+  chooseCard(card3, meaning3);
 }
-randomCard(cards);
-btn.addEventListener("click", generateCard);
-// window.addEventListener("load", generateCard);
