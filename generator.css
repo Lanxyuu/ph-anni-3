@@ -1,5 +1,5 @@
 /*
-  CSS Styles for Gallery in 2nd Anniversary Website | gallery.css
+  CSS Styles for Gallery in 3rd Anniversary Website | generator.css
 */
 
 
@@ -41,7 +41,7 @@ button {
 }
 
 .card {
-	width: 250px;
+	width:  300px;
 	height: auto;
 	margin: 3%;
 	text-align: center;
@@ -69,9 +69,25 @@ button {
 	background: #aa94b0;
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-evenly;
+	justify-content: center;
 	
 	height: auto;
+}
+
+.text-div {
+	background: #aa94b0;
+	color: white;
+	font-family: Verdana;
+	line-height: 1.6;
+	padding: 10px 0px 50px;
+}
+
+th {
+	padding: 0px 10px 0px;
+}
+
+td {
+	text-align: center;
 }
 
 /* first gradient */
@@ -121,6 +137,17 @@ button:active {
 footer {
 	color: #ffffff;
 	margin: 40px 10px;
+
+	font-family: Calibri;
+}
+
+a {
+	color: #9492db;
+	text-decoration: none;
+}
+
+a:hover {
+	font-weight: bolder;
 }
 
 /* if device is mobile */
@@ -137,10 +164,4 @@ footer {
 		background: linear-gradient(#aa94b0 0%, #000000 100%);
 		  color: white;
 	}
-	/*
-	.card-display > img {
-		margin: 10px;
-		width: 80vw;
-		height: auto;
-	}*/
 }

@@ -43,6 +43,7 @@ body {
 
 	flex-direction: row;
   flex-wrap: wrap;
+  flex-flow: row wrap;
 
 	display: flex;
   
@@ -129,14 +130,19 @@ body {
 }
 
 footer {
-  font-family: 'Niramit';
+  font-family: Calibri;
   margin: 20px 5px;
   font-size: 85%;
   color: white;
 }
 
 a {
-	color: #4f1fff;
+	color: #9492db;
+	text-decoration: none;
+}
+
+a:hover {
+	font-weight: bolder;
 }
 
 .title {
