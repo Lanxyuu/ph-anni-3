@@ -114,11 +114,6 @@ body {
   }
 }
 
-.comment-description:hover {
-  background-color:rgb(223, 218, 245, 1);
-  transition: 0.8s;
-}
-
 /*footer*/
 .last-divider {
 	height: auto;
