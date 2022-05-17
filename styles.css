@@ -75,6 +75,10 @@ body {
   border-radius: 10px;
 }
 
+.card a {
+  color: white;
+}
+
 .message-container {
   width: 50%;
   background-image: url('images/paper-bg.jpg');
