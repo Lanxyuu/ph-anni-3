@@ -32,13 +32,13 @@ body {
 
 .first-divider {
 	height: auto;
-	background: linear-gradient(#000000 0%, #aa94b0 100%);
+	background: linear-gradient(#000000 0%, #a07cfc 100%);
   padding: 10px 5px;
 }
 
 /* columns and boxes */
 .content-flexbox {
-	background: #aa94b0;
+	background: #a07cfc;
 	padding: 1px 0px 5px;
 
 	flex-direction: row;
@@ -118,7 +118,7 @@ body {
 .last-divider {
 	height: auto;
 	padding: 10px 0px;
-  background: linear-gradient(#aa94b0 0%, #000000 100%);	
+  background: linear-gradient(#a07cfc 0%, #000000 100%);	
   font-family: 'Baskerville';
   color: white;
   font-size: 180%;
@@ -145,14 +145,14 @@ a:hover {
   color: #160045;
   font-size: 250%;
   padding: 10px;
-  background-color: #aa94b0;
+  background-color: #a07cfc;
   padding: 25px 25px 50px;
 }
 
 /*button*/
 
 .button-div {
-  background-color: #aa94b0;
+  background-color: #a07cfc;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

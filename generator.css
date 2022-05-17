@@ -31,7 +31,7 @@ h1, p {
 }
 
 .button-div {
-	background: #aa94b0;
+	background: #a07cfc;
 }
 
 button {
@@ -66,7 +66,7 @@ button {
 }
 
 .card-display {
-	background: #aa94b0;
+	background: #a07cfc;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
@@ -75,7 +75,7 @@ button {
 }
 
 .text-div {
-	background: #aa94b0;
+	background: #a07cfc;
 	color: white;
 	font-family: Verdana;
 	line-height: 1.6;
@@ -93,7 +93,7 @@ td {
 /* first gradient */
 .first-divider {
 	height: 100px;
-	background: linear-gradient(#000000 0%, #aa94b0 100%);
+	background: linear-gradient(#000000 0%, #a07cfc 100%);
   	padding: 10px 5px;
 	
 	font-size: 150%;
@@ -102,7 +102,7 @@ td {
 /* last gradient */
 .last-divider {
 	height: 100px;
-	background: linear-gradient(#aa94b0 0%, #000000 100%);
+	background: linear-gradient(#a07cfc 0%, #000000 100%);
   	color: white;
 }
 
@@ -155,13 +155,13 @@ a:hover {
 	/* first gradient */
 	.first-divider {
 		height: 50px;
-		background: linear-gradient(#000000 0%, #aa94b0 100%);
+		background: linear-gradient(#000000 0%, #a07cfc 100%);
     	padding: 10px 5px;
 	}
 	/* last gradient */
 	.last-divider {
 		height: 50px;
-		background: linear-gradient(#aa94b0 0%, #000000 100%);
+		background: linear-gradient(#a07cfc 0%, #000000 100%);
 		  color: white;
 	}
 }
