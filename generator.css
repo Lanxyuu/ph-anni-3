@@ -18,6 +18,7 @@ body {
 /* header */
 header {
 	margin: 40px 10px;
+	font-family: 'EB Garamond', sans-serif;
 }
 
 header > p {
@@ -31,7 +32,7 @@ h1, p {
 }
 
 .button-div {
-	background: #aa94b0;
+	background: #997f8c;
 }
 
 button {
@@ -47,7 +48,6 @@ button {
 	text-align: center;
 
 	color: white;
-	font-family: Verdana;
 }
 
 .card  > img {
@@ -65,20 +65,25 @@ button {
 }
 
 .card-display {
-	background: #aa94b0;
+	background: #997f8c;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
 	
 	height: auto;
+
+	font-family: 'EB Garamond', serif;
+	font-size: 22px;
 }
 
 .text-div {
-	background: #aa94b0;
+	background: #997f8c;
 	color: white;
-	font-family: Verdana;
 	line-height: 1.6;
 	padding: 10px 0px 50px;
+
+	font-family: 'EB Garamond', serif;
+	font-size: 20px;
 }
 
 th {
@@ -92,16 +97,17 @@ td {
 /* first gradient */
 .first-divider {
 	height: 100px;
-	background: linear-gradient(#000000 0%, #aa94b0 100%);
+	background: linear-gradient(#000000 0%, #997f8c 100%);
   	padding: 10px 5px;
 	
 	font-size: 150%;
+	font-family: 'EB Garamond', serif;
 }
 
 /* last gradient */
 .last-divider {
 	height: 100px;
-	background: linear-gradient(#aa94b0 0%, #000000 100%);
+	background: linear-gradient(#997f8c 0%, #000000 100%);
   	color: white;
 }
 
@@ -113,13 +119,40 @@ button {
 
   color: white;
   text-align: center;
-  border-radius: 15px;
+  border-radius: 5px;
 
-  font-family: 'Hind';
+  font-family: 'EB Garamond', sans-serif;
   font-size: 24px;
   font-weight: bold;
 
-  padding: 10px;
+  padding: 10px 15px;
+  width: auto;
+}
+
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 25px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 button:hover {
@@ -154,13 +187,13 @@ a:hover {
 	/* first gradient */
 	.first-divider {
 		height: 50px;
-		background: linear-gradient(#000000 0%, #aa94b0 100%);
+		background: linear-gradient(#000000 0%, #997f8c 100%);
     	padding: 10px 5px;
 	}
 	/* last gradient */
 	.last-divider {
 		height: 50px;
-		background: linear-gradient(#aa94b0 0%, #000000 100%);
+		background: linear-gradient(#997f8c 0%, #000000 100%);
 		  color: white;
 	}
 }

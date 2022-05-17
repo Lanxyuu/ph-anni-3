@@ -82,15 +82,26 @@ body {
 .message-container {
   width: 50%;
   background-image: url('images/paper-bg.jpg');
+  opacity: 80%;
 
   border-radius: 5px;
+  font-family: 'EB Garamond', serif;
 }
 
-.message {
+.message  {
 	margin: 1.5vw 2.5vw;
   font-size: 20px;
+  font-weight: 500;
 }
 
+.message p:hover {
+  color:#160045;
+  transition: 0.6s;
+}
+
+.message a {
+  color: #3e2080;
+}
 
 @media (max-width: 1100px) {
 	.card-container {
@@ -145,9 +156,9 @@ a:hover {
 }
 
 .title {
-  font-family: 'Playball';
+  font-family: 'Style Script', cursive;
   color: #160045;
-  font-size: 250%;
+  font-size: 300%;
   padding: 10px;
   background-color: #aa94b0;
   padding: 25px 25px 50px;
@@ -170,9 +181,9 @@ a:hover {
 
   color: white;
   text-align: center;
-  border-radius: 15px;
+  border-radius: 5px;
 
-  font-family: 'Hind';
+  font-family: 'EB Garamond', sans-serif;
   font-size: 24px;
   font-weight: bold;
 
@@ -187,4 +198,29 @@ a:hover {
 .button:active {
   background-color: #160045;
   transform: translateY(3px);
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
