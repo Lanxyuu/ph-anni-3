@@ -10,6 +10,10 @@ body, h1, h5, header, div, footer {
 	margin: 0;
 }
 
+header {
+  margin-bottom: 20px;
+}
+
 h1 {
   color: white;
   font-family: 'Baskerville';
@@ -28,8 +32,12 @@ body {
 	font-size: 150%;
 	color: white;
   position: relative;
-  top: -55vh;
+  top: -60vh;
 	max-width: 800px;
+  height: 50px;
+  padding: 20px;
+  padding-top: 0px;
+  line-height: 150%;
 }
 
 .first-divider {
@@ -274,15 +282,18 @@ height: 75vh;
   and (-webkit-min-device-pixel-ratio: 2) {
     .intro {
       top: -15vh;
+      height: auto;
     }
 }
 @media(max-width: 320px){ 
   .intro {
     top: -15vh;
+    height: auto;
   }
 }
 .trailer-text {
-  font-size: 20px;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
