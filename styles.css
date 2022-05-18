@@ -27,6 +27,8 @@ body {
   padding: 10px 5px;
 	font-size: 150%;
 	color: white;
+  position: relative;
+  top: -55vh;
 	max-width: 800px;
 }
 
@@ -169,7 +171,6 @@ a:hover {
 /*button*/
 
 .button-div {
-  background-color: #a07cfc;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -230,3 +231,64 @@ a:hover {
 .end {
   margin: 20px;
 }
+
+.video-container{
+  align-items: center;
+  align-content: center;
+  padding: 0px;
+  width: 100%;
+  height: 75vh;
+  margin: 0px;
+}
+.video-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 75vh;
+  background: #000000;
+  opacity: 0.7;
+}
+ #bgvid {
+  top: 50%;
+  z-index: -1;
+  width: 100%;
+height: 75vh;
+  background-size:cover;
+}
+
+
+@media (min-aspect-ratio: 16/9) {
+  .video-container video {
+    height: 56.25vw;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-container video {
+    width: 177.78vh;
+  }
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 680px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .intro {
+      top: -15vh;
+    }
+}
+@media(max-width: 320px){ 
+  .intro {
+    top: -15vh;
+  }
+}
+.trailer-text {
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
