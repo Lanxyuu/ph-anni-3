@@ -40,7 +40,7 @@ let generateCards = () => {
 
 
 
-const cardImg = [ //justice card, thehangedman, thewheeloffortune
+const cardImg = [ //thewheeloffortune
   "./cards/arcana/death.jpg", "./cards/arcana/judgement.jpg", "./cards/arcana/justice.jpg", "./cards/arcana/strength.jpg",
   "./cards/arcana/temperance.jpg", "./cards/arcana/thechariot.jpg", "./cards/arcana/thedevil.jpg", "./cards/arcana/theemperor.jpg",
   "./cards/arcana/theempress.jpg", "./cards/arcana/thefool.jpg", "./cards/arcana/thehangedman.jpg", "./cards/arcana/thehermit.jpg",
@@ -48,25 +48,22 @@ const cardImg = [ //justice card, thehangedman, thewheeloffortune
   "./cards/arcana/themoon.jpg", "./cards/arcana/thestar.jpg", "./cards/arcana/thesun.jpg", "./cards/arcana/thetower.jpg",
   "./cards/arcana/thewheeloffortune.jpg", "./cards/arcana/theworld.jpg",
 
-  //2ofcups, 3ofcups, 6ofcups
   "./cards/cups/1ofcups.jpg", "./cards/cups/2ofcups.jpg", "./cards/cups/3ofcups.jpg", "./cards/cups/4ofcups.jpg", 
   "./cards/cups/5ofcups.jpg", "./cards/cups/6ofcups.jpg", "./cards/cups/7ofcups.jpg", "./cards/cups/8ofcups.jpg", 
   "./cards/cups/9ofcups.jpg", "./cards/cups/10ofcups.jpg", "./cards/cups/kingofcups.jpg", "./cards/cups/knightofcups.jpg", 
   "./cards/cups/pageofcups.jpg", "./cards/cups/queenofcups.jpg",
 
-  //4ofpentacles, knightofpentacles, queenofpentacles
+  //4ofpentacles, queenofpentacles
   "./cards/pentacles/1ofpentacles.jpg", "./cards/pentacles/2ofpentacles.jpg", "./cards/pentacles/3ofpentacles.jpg", "./cards/pentacles/4ofpentacles.jpg", 
   "./cards/pentacles/5ofpentacles.jpg", "./cards/pentacles/6ofpentacles.jpg", "./cards/pentacles/7ofpentacles.jpg", "./cards/pentacles/8ofpentacles.jpg", 
   "./cards/pentacles/9ofpentacles.jpg", "./cards/pentacles/10ofpentacles.jpg", "./cards/pentacles/kingofpentacles.jpg", "./cards/pentacles/knightofpentacles.jpg", 
   "./cards/pentacles/pageofpentacles.jpg", "./cards/pentacles/queenofpentacles.jpg",
 
-  //4ofswords, 6ofswords, kingofswords
   "./cards/swords/1ofswords.jpg", "./cards/swords/2ofswords.jpg", "./cards/swords/3ofswords.jpg", "./cards/swords/4ofswords.jpg", 
   "./cards/swords/5ofswords.jpg", "./cards/swords/6ofswords.jpg", "./cards/swords/7ofswords.jpg", "./cards/swords/8ofswords.jpg", 
   "./cards/swords/9ofswords.jpg", "./cards/swords/10ofswords.jpg", "./cards/swords/kingofswords.jpg", "./cards/swords/knightofswords.jpg", 
   "./cards/swords/pageofswords.jpg", "./cards/swords/queenofswords.jpg",
 
-  //3ofwands, 6ofwands
   "./cards/wands/1ofwands.jpg", "./cards/wands/2ofwands.jpg", "./cards/wands/3ofwands.jpg", "./cards/wands/4ofwands.jpg", 
   "./cards/wands/5ofwands.jpg", "./cards/wands/6ofwands.jpg", "./cards/wands/7ofwands.jpg", "./cards/wands/8ofwands.jpg", 
   "./cards/wands/9ofwands.jpg", "./cards/wands/10ofwands.jpg", "./cards/wands/kingofwands.jpg", "./cards/wands/knightofwands.jpg", 
