@@ -197,3 +197,17 @@ a:hover {
 		  color: white;
 	}
 }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 680px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .PHlogo {
+		width:100%;
+	  }
+}
+@media(max-width: 320px){ 
+  .PHlogo {
+    width:100%;
+  }
+}
