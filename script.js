@@ -8,7 +8,7 @@ const meaning3 = document.getElementById("meaning3");
 let cards;
 
 function chooseCard(cardId, meaningId) {
-  let random = Math.floor(Math.random() * cardImg.length);
+  let random = 34 //Math.floor(Math.random() * cardImg.length);
   while (cards.includes(random)) {
     random = Math.floor(Math.random() * cardImg.length);
   }
@@ -16,6 +16,9 @@ function chooseCard(cardId, meaningId) {
   var cardFilePath = cardImg[random];
   if(cardFilePath == "./cards/cups/3ofcups.jpg") {
     cardFilePath = (0 == Math.round(Math.random())) ? "./cards/cups/3ofcups1.jpg" : "./cards/cups/3ofcups2.jpg";
+  }
+  if(cardFilePath == "./cards/cups/pageofcups.jpg") {
+    cardFilePath = (0 == Math.round(Math.random())) ? "./cards/cups/pageofcups1.jpg" : "./cards/cups/pageofcups2.jpg";
   }
   cardId.src = cardFilePath;
   if (isUpright) {
