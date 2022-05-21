@@ -13,7 +13,11 @@ function chooseCard(cardId, meaningId) {
     random = Math.floor(Math.random() * cardImg.length);
   }
   const isUpright = (0 == Math.round(Math.random())) ? true : false;
-  cardId.src = cardImg[random];
+  var cardFilePath = cardImg[random];
+  if(cardFilePath == "./cards/cups/3ofcups.jpg") {
+    cardFilePath = (0 == Math.round(Math.random())) ? "./cards/cups/3ofcups1.jpg" : "./cards/cups/3ofcups2.jpg";
+  }
+  cardId.src = cardFilePath;
   if (isUpright) {
     cardId.classList.remove("reversed");
     meaningId.innerHTML = upright[random];
