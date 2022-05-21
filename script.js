@@ -8,7 +8,7 @@ const meaning3 = document.getElementById("meaning3");
 let cards;
 
 function chooseCard(cardId, meaningId) {
-  let random = 34 //Math.floor(Math.random() * cardImg.length);
+  let random = Math.floor(Math.random() * cardImg.length);
   while (cards.includes(random)) {
     random = Math.floor(Math.random() * cardImg.length);
   }
