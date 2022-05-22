@@ -86,6 +86,11 @@ body {
   border-radius: 10px;
 }
 
+.card > img:hover {
+  cursor: pointer;
+  opacity: 90%;
+}
+
 .card a {
   color: white;
 }
@@ -153,6 +158,13 @@ body {
 	}
 
   .card-container > img {
+    width: 80%;
+  }
+
+  
+  .modal > img {
+    margin: auto;
+    display: block;
     width: 80%;
   }
 }
@@ -299,7 +311,7 @@ height: 75vh;
     .intro {
       top: -15vh;
       height: auto;
-    }
+    }    
 }
 @media(max-width: 320px){ 
   .intro {
@@ -312,9 +324,38 @@ height: 75vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
 
+.modal-caption {
+  font-family: 'EB Garamond', serif;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
 
+.modal > img {
+  margin: auto;
+  display: block;
+  width: 32%;
+  border-radius: 20px;
+}
 
+@media only screen and (max-width: 1100px) {  
+  .modal > img {
+    width: 80%;
+  }
+}
 
 
 
